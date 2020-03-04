@@ -20,18 +20,12 @@ Processor& System::Cpu() {return cpu_;}
 // TODO: Return a container composed of the system's processes
 vector<Process>& System::Processes() {
     vector<int> pidlist = LinuxParser::Pids();
-    bool sorted = true;
-    
-    if (sorted) {std::sort(processes_.begin(), processes_.end());}
-
-    for (auto pid: pidlist){
-        if (std::find_if(processes_.begin(), processes_.end(),[pid](Process& n) {return n.Pid() == pid;}) == processes_.end()) {
-            sorted = true;
-            Process process(pid);
-            processes_.emplace_back(process);
-        }
-    }
-    return processes_; 
+   for (auto pid: pidlist){
+       Process process(pid);
+       processes_.emplace_back(process);
+   }
+   std::sort(processes_.begin(), processes_.end());
+   return processes_;
 }
 
     
