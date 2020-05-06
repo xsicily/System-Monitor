@@ -33,5 +33,5 @@ This project uses [Make](https://www.gnu.org/software/make/). The Makefile has f
 
 * `make`
 
-3. Run the resulting executable: `./build/monitor`
+3. Run the resulting executable: `./monitor`
 
