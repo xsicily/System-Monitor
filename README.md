@@ -1,6 +1,7 @@
 # CppND-System-Monitor
 
-Starter code for System Monitor Project in the Object Oriented Programming Course of the [Udacity C++ Nanodegree Program](https://www.udacity.com/course/c-plus-plus-nanodegree--nd213). 
+This is the project for the second course in the Udacity C++ Nanodegree Program: System monitor.
+
 Example of system monitor can be shown as below:
 
 
