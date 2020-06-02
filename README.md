@@ -37,3 +37,6 @@ This project uses [Make](https://www.gnu.org/software/make/). The Makefile has f
 3. Run the resulting executable: `./monitor`
 
 ## Knowledge applied
+
+1. OOP
+2. Read files
